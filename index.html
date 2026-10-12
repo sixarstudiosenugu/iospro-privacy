@@ -29,12 +29,12 @@
 <p>This Privacy Policy explains how <strong>iosPro</strong> (the &ldquo;App&rdquo;), an Android home-screen launcher published by <strong>SIXAR STUDIOS</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;), handles information. It applies only to the App.</p>
 
 <div class="box">
-  <strong>The short version.</strong> The App works on your device. We do not run a server for it, we do not have user accounts, we do not show ads, we do not use analytics or crash-reporting services, and we do not sell your data. The only information that leaves your device is (1) your approximate coordinates, sent to a weather service when you use the Weather widget, and (2) purchase handling by Google Play.
+  <strong>The short version.</strong> The App works on your device. We do not run a server for it, we do not have user accounts, we do not show ads, we do not run any analytics or crash-reporting of our own, and we do not sell your data. The only information that leaves your device is (1) your approximate coordinates, sent to a weather service when you use the Weather widget, (2) purchase handling by Google Play, and (3) the technical data Google may collect through Google Play services and ML Kit (see section 4).
 </div>
 
 <h2>1. Who we are and how to contact us</h2>
 <p>Developer: SIXAR STUDIOS<br>
-Contact email: <a href="mailto:sixarstudiosenugu@gmail.com">sixarstudiosenugu@gmail.com</a><br>
+Contact email: <a href="mailto:sixarstudios@gmail.com">sixarstudios@gmail.com</a><br>
 Address (if required in your region): Lagos, Nigeria</p>
 
 <h2>2. Information the App accesses</h2>
@@ -53,9 +53,9 @@ Address (if required in your region): Lagos, Nigeria</p>
     <td>No. Events are read and displayed on your device only.</td>
   </tr>
   <tr>
-    <td><strong>Photos / media images</strong></td>
-    <td>Shows photos you have on your device in the Photos widget, and lets you pick or process a wallpaper.</td>
-    <td>No. Images are processed on your device only.</td>
+    <td><strong>Photos you choose</strong> (no photo permission)</td>
+    <td>Shows the photos you select in the Photos widget, and the image you pick as a wallpaper. You choose them with Android&rsquo;s own file picker; the App does not request photo or storage permission and cannot see any photo you did not pick.</td>
+    <td>No. Chosen photos are read and displayed on your device only. The wallpaper depth effect is processed on your device (see section 4).</td>
   </tr>
   <tr>
     <td><strong>Notifications</strong> (Notification access)</td>
@@ -68,8 +68,13 @@ Address (if required in your region): Lagos, Nigeria</p>
     <td>No.</td>
   </tr>
   <tr>
-    <td><strong>Accessibility service</strong> (optional)</td>
-    <td>Used only to perform system actions you request, such as opening the Recents screen when you swipe up. It is not used to read, collect or store what is shown on your screen or what you type.</td>
+    <td><strong>Accessibility service</strong> (optional, off by default)</td>
+    <td>Used to (1) perform system actions you ask for: open Recents, Home or Back, the power menu, a screenshot or the lock screen, when you use a gesture or a Control Center button, and (2) detect <strong>the name of the app currently in front</strong> so the Dynamic Island can hide in games and full-screen video. It does <strong>not</strong> read the content of your screen, your messages, passwords or anything you type, and it cannot tap or control other apps. The app name is held in memory only, is not stored, and is not sent anywhere. You are shown a full explanation inside the App before being asked to turn it on, and you can turn it off at any time in Android Settings.</td>
+    <td>No.</td>
+  </tr>
+  <tr>
+    <td><strong>Display over other apps</strong> (optional)</td>
+    <td>Used only to draw the Dynamic Island on top of other apps. While it is on, the App shows a persistent notification. It does not capture or record what is underneath.</td>
     <td>No.</td>
   </tr>
   <tr>
@@ -95,7 +100,7 @@ Address (if required in your region): Lagos, Nigeria</p>
 </table>
 
 <h2>3. Information stored on your device</h2>
-<p>The App stores the following locally, in its private app storage: your layout and settings, widget choices, any notes or checklist items you type into a widget, a cached weather result, and your licence and trial status (see section 5). This data stays on your device. It is deleted when you clear the App&rsquo;s data or uninstall it. Android backup is disabled for the App where possible so this data is not copied to other devices.</p>
+<p>The App stores the following locally, in its private app storage: your layout and settings, widget choices, any notes or checklist items you type into a widget, a cached weather result, and your licence and trial status (see section 5). This data stays on your device. It is deleted when you clear the App&rsquo;s data or uninstall it. Android backup is turned off for the App, so this data is not copied to cloud backups or other devices.</p>
 
 <h2>4. Information shared with third parties</h2>
 <p>We do not sell your personal information, and we do not share it for advertising or marketing. The App communicates with the following parties only:</p>
@@ -110,6 +115,11 @@ Address (if required in your region): Lagos, Nigeria</p>
     <td><strong>Google Play</strong> (Google LLC), payments and licensing</td>
     <td>Purchase and entitlement information handled through Google Play Billing, under your Google account.</td>
     <td>To process the one-time purchase and confirm that you own it. We never see your payment card details. See <a href="https://policies.google.com/privacy">Google&rsquo;s Privacy Policy</a>.</td>
+  </tr>
+  <tr>
+    <td><strong>Google Play services / ML Kit</strong> (Google LLC), on-device image analysis</td>
+    <td>The wallpaper depth effect uses Google&rsquo;s ML Kit subject segmentation. It runs on your device; your wallpaper is not uploaded. Google Play services downloads the model, and Google states that ML Kit and Play services may collect limited technical information such as performance metrics and device or app details.</td>
+    <td>To separate the subject from the background of your wallpaper. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google&rsquo;s ML Kit data disclosure</a> and <a href="https://policies.google.com/privacy">Google&rsquo;s Privacy Policy</a>.</td>
   </tr>
   <tr>
     <td><strong>Your device&rsquo;s geocoder</strong> (device maker / Google)</td>
@@ -131,7 +141,7 @@ Address (if required in your region): Lagos, Nigeria</p>
 <h2>8. Your choices and rights</h2>
 <ul>
   <li><strong>Permissions:</strong> grant or revoke any permission at any time in Android Settings &gt; Apps &gt; iosPro &gt; Permissions.</li>
-  <li><strong>Special access:</strong> notification access and the accessibility service can be turned off in Android Settings.</li>
+  <li><strong>Special access:</strong> notification access, the accessibility service and display-over-other-apps can each be turned off in Android Settings.</li>
   <li><strong>Remove the Weather feature&rsquo;s data sharing:</strong> remove the Weather widget from your home screen.</li>
   <li><strong>Delete data:</strong> clear the App&rsquo;s storage, or uninstall the App, to remove everything it stores on your device.</li>
 </ul>
@@ -141,7 +151,7 @@ Address (if required in your region): Lagos, Nigeria</p>
 <p>The App is a general-purpose utility and is not directed to children under 13 (or under 16 in some regions). We do not knowingly collect personal information from children. If you believe a child has provided personal information through the App, contact us and we will help address it.</p>
 
 <h2>10. International use</h2>
-<p>Open-Meteo and Google may process information in countries other than your own. By using the Weather widget or making a purchase you understand your information may be handled there under their policies.</p>
+<p>Open-Meteo and Google may process information in countries other than your own. By using the Weather widget, the wallpaper depth effect or making a purchase you understand your information may be handled there under their policies.</p>
 
 <h2>11. Changes to this policy</h2>
 <p>We may update this policy when the App or the law changes. The &ldquo;Last updated&rdquo; date above will change when we do, and for significant changes we will provide a notice in the App or on the Google Play listing.</p>
